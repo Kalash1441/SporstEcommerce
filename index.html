@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to  Sports ECommerce Portal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('asset/123.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        }
+        .container {
+            text-align: center;
+            padding: 40px 60px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .btn.customer {
+            background: #ff7f50;
+            box-shadow: 0 4px 8px rgba(255, 127, 80, 0.4);
+        }
+        .btn.customer:hover {
+            background: #ff5722;
+            box-shadow: 0 6px 12px rgba(255, 87, 34, 0.5);
+        }
+        .btn.vendor {
+            background: #4caf50;
+            box-shadow: 0 4px 8px rgba(76, 175, 80, 0.4);
+        }
+        .btn.vendor:hover {
+            background: #388e3c;
+            box-shadow: 0 6px 12px rgba(56, 142, 60, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Welcome to  Sports eCommerce Portal</h1>
+        <p>Select your role to continue:</p>
+        <a href="customer.php" class="btn customer">I am a Customer</a>
+        <a href="login.php" class="btn vendor">I am a Vendor</a>
+    </div>
+</body>
+</html>
